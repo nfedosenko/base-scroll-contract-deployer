@@ -11,6 +11,8 @@ yarn install
 npx hardhat compile
 ```
 
+Then, create ```.env``` file under root folder, copy content from ```.env.example``` and set value for ```PRIVATE_KEY```
+
 ### Deploy ERC-20 on Scroll:
 
 ```shell
