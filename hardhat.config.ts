@@ -23,7 +23,7 @@ const config: HardhatUserConfig = {
                 !!process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
         },
         baseGoerli: {
-            url: 'https://goerli.base.org',
+            url: process.env.BASE_TESTNET_URL,
             accounts: [process.env.PRIVATE_KEY],
         },
     },
