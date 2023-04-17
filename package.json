@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.8.2",
+    "@uniswap/v3-periphery": "^1.4.3",
+    "@uniswap/v3-sdk": "^3.9.0",
     "dotenv": "^16.0.3"
   },
   "scripts": {
@@ -34,6 +36,7 @@
     "deploy-token[scroll]": "npx hardhat run scripts/deployToken.ts --network scrollTestnet",
     "deploy-nft[scroll]": "npx hardhat run scripts/deployNft.ts --network scrollTestnet",
     "deploy-token[base]": "npx hardhat run scripts/deployToken.ts --network baseGoerli",
-    "deploy-nft[base]": "npx hardhat run scripts/deployNft.ts --network baseGoerli"
+    "deploy-nft[base]": "npx hardhat run scripts/deployNft.ts --network baseGoerli",
+    "create-pool[scroll]": "npx hardhat run scripts/deployPool.ts --network scrollTestnet"
   }
 }
